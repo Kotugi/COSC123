@@ -1,0 +1,23 @@
+void setup(){
+  size(500,500);
+  background(0);
+}
+void draw(){
+   background(0);
+   stroke(255,50);
+   strokeWeight(1);
+   for(int x = 0;x<=50;x++){
+     line(0,10*x,500,10*x);
+     line(10*x,0,10*x,500);
+   }
+   textSize(10);
+  stroke(255,255,255);
+  text("Mouse X: "+mouseX,10,50);
+    text("Mouse Y: "+mouseY,10,30);
+noFill();
+stroke(255, 102, 0);
+strokeWeight(20);
+circle(mouseX,mouseY-90,100);
+bezier(480, 48, mouseX, mouseY, mouseX, mouseY, 40, 466);
+bezier(47, 15, mouseX, mouseY, mouseX, mouseY, 450, 466);
+}
