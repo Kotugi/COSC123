@@ -1,0 +1,33 @@
+//Names: Johan Gonzaga, Hangleng Sok, Owen Strolle
+void setup(){
+  size(500,500);
+background(0);
+}
+void draw(){
+ // translate(mouseX-250,mouseY-250);
+  background(0);
+colorMode(RGB,255,255,255);
+
+fill(255,255,0);
+stroke(255,255,255);
+circle(mouseX,mouseY-50,150); 
+fill(210,0,190);
+triangle(mouseX,mouseY+40,mouseX-100,mouseY+150,mouseX+100,mouseY+150);
+fill(0,0,0);
+textSize(50);
+text("$ . $",mouseX-42,mouseY-40);
+rectMode(CENTER);
+stroke(255,0,0);
+rect(mouseX,mouseY+140,183,5);
+textSize(100);
+colorMode(HSB,300,100,100);
+fill(30);
+text("!",mouseX-15,mouseY+130);
+strokeWeight(5);
+colorMode(RGB,255);
+stroke(255,0,255);
+line(mouseX-160,mouseY+70,mouseX-50,mouseY+70);
+line(mouseX+50,mouseY+70,mouseX+160,mouseY+70);
+line(mouseX-30,mouseY+160,mouseX-30,mouseY+230);
+line(mouseX+30,mouseY + 160,mouseX+30,mouseY+230);
+}
